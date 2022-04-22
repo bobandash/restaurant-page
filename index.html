@@ -6,42 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = "main.js"></script>
     <title>Document</title>
+    <link rel = "stylesheet" href = "/src/index.css">
 </head>
 <body>
     <div id="content">
-        <header>
-            <div>Home</div>
-            <div>Menu</div>
-            <div>Contact</div>
-        </header>
-        <h1 id = "restaurant-name">Omulife</h1>
-        <div>
-            <img src = "">
-        </div>
-        <div id = "company-mission">
-            <h2>Company Mission</h2>
-            <P>In Japan, omurice is a staple food, found anywhere from the local mom and pop store to high rise luxury Michellin star restaurants. In America, omurice treated as 
-                something easy and fast -- something that anyone can make, given the proper ingredients at home. As a Los Angeles native, the owner GoldBeaver witnessed his 
-                favorite omurice restaurants go bankrupt because of this preconception. At Omulife, we are trying to change the perception of omurice in America. We offer 
-                irreplicable omurice experience.
-            </P>
-        </div>
-        <h1>Interested?</h1>
-        <h2>Let's get started.</h2>
-        <div><button id = "menu-btn">Menu</button></div>
-        <div id = "location-info">
-            <h2>Location</h2>
-            <p>1600 Pennsylvania Avenue NW, Washington, DC 20500</p>
-        </div>
-        <div id = "hours-info">
-            <h2>Hours</h2>
-            <div>Sunday: Closed</div>
-            <div>Monday: 10am - 1am</div>
-            <div>Tuesday: 10am - 1am</div>
-            <div>Wednesday: 10am - 1am</div>
-            <div>Thursday: 10am - 1am</div>
-            <div>Friday: 10am - 1am</div>
-            <div>Saturday: 8am - 6pm</div>
+        <nav id = "nav-header">
+            <button class = "selected-nav" id = "home-nav-btn">Home</button>
+            <button id = "menu-nav-btn">Menu</button>
+            <button id = "contact-nav-btn">Contact</button>
+        </nav>
+        <div id = "main-content">
+            <h1 id = "restaurant-name"><span class = "first-half-co-name">Omu</span><span class = "second-half-co-name">life</span></h1>
+            <div id = "company-logo">
+                <img src = "/src/images/omurice-clipart.png" alt = "omurice clipart">
+            </div>
+            <div id = "company-mission">
+                <h2>Company Mission</h2>
+                <P>In Japan, omurice is a staple food, found anywhere from the local mom and pop store to high rise luxury Michellin star restaurants. In America, omurice treated as 
+                    something easy and fast -- something that anyone can make, given the proper ingredients at home. In Los Angeles, the owner GoldBeaver witnessed his 
+                    favorite omurice restaurants go bankrupt because of this preconception. At Omulife, we are trying to change the perception of omurice in America. We offer 
+                    irreplicable omurice experience.
+                </P>
+            </div>
+            <h2>Interested? Let's get started.</h2>
+            <div id = "menu-btn-container"><button id = "menu-btn">Check Out Our Menu</button></div>
+            <div id = "location-info">
+                <h2>Location</h2>
+                <p>1600 Pennsylvania Avenue NW, Washington, DC 20500</p>
+            </div>
+            <div id = "hours-info">
+                <h2>Hours</h2>
+                <div>Sunday: Closed</div>
+                <div>Monday: 10am - 1am</div>
+                <div>Tuesday: 10am - 1am</div>
+                <div>Wednesday: 10am - 1am</div>
+                <div>Thursday: 10am - 1am</div>
+                <div>Friday: 10am - 1am</div>
+                <div>Saturday: 8am - 1am</div>
+            </div>
         </div>
     </div>
 </body>
