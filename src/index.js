@@ -1,1 +1,2 @@
-console.log('Hi golddoof');
+import {createHomePage} from './homepage';
+createHomePage();
