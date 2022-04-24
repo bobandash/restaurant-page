@@ -1,19 +1,24 @@
+/* includes the default nav styling and grid styling*/
+/*applies to all tabs */
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
 
-:root{
-    --gold-color: rgb(255, 223, 0);
-    --opaque-gold-color: rgb(255, 233, 0, 0.7);
-    --red-color: #8b0000;
-}
 
 html, body, #content {
     margin: 0;
     width: 100%;
 }
 
+:root{
+    --gold-color: rgb(255, 223, 0);
+    --opaque-gold-color: rgb(255, 233, 0, 0.7);
+    --red-color: #8b0000;
+    --old-standard-font: 'Old Standard TT', serif;
+    --orelega-font: 'Orelega One', cursive;
+    --patrick-hand-font: 'Patrick Hand', cursive;
+}
 
 #content {
     display: grid;
@@ -44,74 +49,27 @@ nav button {
     font-family: 'Libre Bodoni', serif;
 }
 
+nav button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;    
+}
+
 .selected-nav {
     background-color: rgb(212, 187, 44);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-/*START CONTENT */
-
-#restaurant-name {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    font-family: 'Orelega One', cursive;
-    font-size: 4.5rem;
 }
 
 #main-content {
     grid-area: content;
 }
 
-.first-half-co-name {
-    color: var(--gold-color);
-}
-
-.second-half-co-name {
-    color: var(--red-color);
-}
-
-h2 {
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: 'Patrick Hand', cursive;
-}
-
-#hours-info {
-    margin-bottom: 30px;
-}
-
-p, #hours-info div{
-    font-size: 24px;
-    font-family: 'Old Standard TT', serif;
-}
-
-#company-logo img {
-    display: block;
-    width: 500px;
-    margin: 0 auto;
-}
-
-/*END CONTENT*/
-
 button {
     display: flex;
     align-items: center;
 }
 
-#menu-btn {
-    box-sizing: border-box;
-    margin: 2rem auto 2rem auto;
-    height: 5rem;
-    padding: 30px;
-    border-radius: 15px;
-    background-color: var(--gold-color);
-    font-size: 1.5em;
-    font-family: 'Old Standard TT', serif;
-}
-
-#menu-btn:hover {
-    background-color: var(--opaque-gold-color);
+h1 {
+    font-family: 'Orelega One', cursive;
+    text-align: center;
+    font-size: 4.5rem;
 }

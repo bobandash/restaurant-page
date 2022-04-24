@@ -1,0 +1,58 @@
+/*START CONTENT */
+
+#restaurant-name {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-family: 'Orelega One', cursive;
+    font-size: 4.5rem;
+}
+
+
+.first-half-co-name {
+    color: var(--gold-color);
+}
+
+.second-half-co-name {
+    color: var(--red-color);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#hours-info {
+    margin-bottom: 30px;
+}
+
+p, #hours-info div{
+    font-size: 24px;
+    font-family: 'Old Standard TT', serif;
+}
+
+#company-logo img {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+/*END CONTENT*/
+
+#menu-btn {
+    box-sizing: border-box;
+    margin: 2rem auto 2rem auto;
+    height: 5rem;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--gold-color);
+    font-size: 1.5em;
+    font-family: var(--old-standard-font);
+}
+
+#menu-btn:hover {
+    background-color: var(--opaque-gold-color);
+}

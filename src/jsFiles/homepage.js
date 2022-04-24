@@ -1,23 +1,25 @@
-const contentDiv = document.getElementById('content');
-let mainContentDiv = document.createElement('div');
-contentDiv.appendChild(mainContentDiv)
-mainContentDiv.setAttribute('id','main-content');
-createHomePage();
-
+import createMainContentDiv from "./createMainContentDiv";
 
 function createHomePage() {
-    createCompanyNameLogo();
-    createRestaurantInfo();
+    let mainContentDiv = createMainContentDiv();
+    changeStylesheet();
+    createCompanyNameLogo(mainContentDiv);
+    createRestaurantInfo(mainContentDiv);
+}
+
+function changeStylesheet() {
+    const currLinkRel = document.getElementById('current-stylesheet');
+    currLinkRel.href = '/src/cssFiles/homepage.css';
 }
 
 
-function createCompanyNameLogo() {
+function createCompanyNameLogo(mainContentDiv) {
     //for restaurant name
-    createRestaurantName();
-    createCompanyLogo();
+    createRestaurantName(mainContentDiv);
+    createCompanyLogo(mainContentDiv);
 }
 
-function createRestaurantName() {
+function createRestaurantName(mainContentDiv) {
     let restaurantName = document.createElement('h1');
     let firsthalfName = document.createElement('span');
     let secondhalfName = document.createElement('span');    
@@ -33,7 +35,7 @@ function createRestaurantName() {
     mainContentDiv.appendChild(restaurantName);
 }
 
-function createCompanyLogo() {
+function createCompanyLogo(mainContentDiv) {
     let companyLogoDiv = document.createElement('div');
     let companyLogoImg = document.createElement('img');
     
@@ -45,14 +47,14 @@ function createCompanyLogo() {
     mainContentDiv.appendChild(companyLogoDiv);
 }
 
-function createRestaurantInfo() {
-    createMissionStatement();
-    createInterested();
-    createLocationInfo();
-    createHoursInfo();
+function createRestaurantInfo(mainContentDiv) {
+    createMissionStatement(mainContentDiv);
+    createInterested(mainContentDiv);
+    createLocationInfo(mainContentDiv);
+    createHoursInfo(mainContentDiv);
 }
 
-function createMissionStatement () {
+function createMissionStatement (mainContentDiv) {
     let companyMissionDiv = document.createElement('div')
     let companyMissionHeader = document.createElement('h2');
     let companyMissionParagraph = document.createElement('p');
@@ -72,7 +74,7 @@ function createMissionStatement () {
 
 }
 
-function createInterested() {
+function createInterested(mainContentDiv) {
     let interestedText = document.createElement('h2');
     let menuBtnContainer = document.createElement('div');
     let menuBtn = document.createElement('button');
@@ -87,7 +89,7 @@ function createInterested() {
     mainContentDiv.appendChild(menuBtnContainer);
 }
 
-function createLocationInfo() {
+function createLocationInfo(mainContentDiv) {
     let locationInfoDiv = document.createElement('div');
     let locationText = document.createElement('h2');
     let addressText = document.createElement('p');
@@ -101,7 +103,7 @@ function createLocationInfo() {
     mainContentDiv.appendChild(locationInfoDiv);
 }
 
-function createHoursInfo() {
+function createHoursInfo(mainContentDiv) {
     let hoursInfoDiv = document.createElement('div');
     let hoursHeader = document.createElement('h2');
     hoursHeader.innerText = 'Hours';

@@ -1,0 +1,51 @@
+@media screen and (min-width: 1500px) {
+    #main-content {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+label:nth-child(n+1) {
+    margin-top: 10px;
+}
+
+input {
+    font-size: 2rem;
+}
+
+input, textarea {
+    border: 1px solid gray;
+}
+
+textarea {
+    height: 15em;
+}
+
+
+#submit-form-btn {
+    width: 40%;
+    align-self: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    height: 4rem;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--gold-color);
+    font-size: 1.5em;
+    font-family: var(--old-standard-font);
+}
+
+#submit-form-btn:hover {
+    background-color: var(--opaque-gold-color);
+}
