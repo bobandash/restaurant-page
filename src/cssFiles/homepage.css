@@ -1,12 +1,7 @@
 /*START CONTENT */
 
 #restaurant-name {
-    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    font-family: 'Orelega One', cursive;
-    font-size: 4.5rem;
 }
 
 
@@ -56,3 +51,19 @@ p, #hours-info div{
 #menu-btn:hover {
     background-color: var(--opaque-gold-color);
 }
+
+@media only screen and (max-width: 650px)
+{
+    #company-logo img {
+        width: 100%;
+    }
+
+    #restaurant-name {
+        font-size: 3em;
+    }
+
+    p, #hours-info div {
+        font-size: 1.25em;
+    }
+}
+

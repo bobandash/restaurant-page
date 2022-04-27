@@ -126,6 +126,10 @@ class menuItem {
             foodImg.style.width = '340px';
         }
 
+        //I don't know why cakes only work half the time
+        if(this.foodName == "Cheese Cake" || this.foodName == "Strawberry Short Cakes"){
+            foodImg.style.height = '325px'
+        }
 
         foodItemName.setAttribute('class','menu-item-name');
         foodItemPrice.setAttribute('class','menu-item-price');

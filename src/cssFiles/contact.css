@@ -49,3 +49,9 @@ textarea {
 #submit-form-btn:hover {
     background-color: var(--opaque-gold-color);
 }
+
+@media only screen and (max-width: 625px) {
+    h2 {
+        font-size: 2em;
+    }
+}
