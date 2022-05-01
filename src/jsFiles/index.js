@@ -1,6 +1,11 @@
 import {createHomePage} from './homepage';
 import {createMenu} from './menu';
 import {createContactUsPage} from './contact';
+import '/src/cssFiles/default.css';
+import '/src/cssFiles/homepage.css';
+import '/src/cssFiles/menu.css';
+import '/src/cssFiles/contact.css';
+
 
 const homeNavBtn = document.getElementById('home-nav-btn');
 const menuNavBtn = document.getElementById('menu-nav-btn');

@@ -2,7 +2,7 @@ import createMainContentDiv from "./createMainContentDiv";
 
 function createContactUsPage() {
     let mainContentDiv = createMainContentDiv();
-    changeStylesheet();
+/*     changeStylesheet(); */
     createContactText(mainContentDiv);
     createForm(mainContentDiv);
 }
@@ -16,6 +16,7 @@ function createContactText(mainContentDiv) {
     let contactUsHeader = document.createElement('h1');
     let alternativeContactText = document.createElement('h2');
     contactUsHeader.innerText = 'Contact Us';
+    alternativeContactText.id = "alternative-contact"
     alternativeContactText.innerText = 'For To-Go and Delivery orders, please call 888-888-8888. If we do not pick up, please email us at goldbeaver@omulife.com or leave a message in the form.'
 
     mainContentDiv.appendChild(contactUsHeader);

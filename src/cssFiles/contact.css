@@ -50,8 +50,16 @@ textarea {
     background-color: var(--opaque-gold-color);
 }
 
+#alternative-contact {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
 @media only screen and (max-width: 625px) {
     h2 {
         font-size: 2em;
+    }
+    #alternative-contact {
+        font-size: 1.5rem;
     }
 }

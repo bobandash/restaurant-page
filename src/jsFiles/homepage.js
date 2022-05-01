@@ -1,8 +1,9 @@
 import createMainContentDiv from "./createMainContentDiv";
+import omuriceLogoImg from "/src/images/omurice-clipart.png"
 
 function createHomePage() {
     let mainContentDiv = createMainContentDiv();
-    changeStylesheet();
+/*     changeStylesheet(); */
     createCompanyNameLogo(mainContentDiv);
     createRestaurantInfo(mainContentDiv);
 }
@@ -20,16 +21,17 @@ function createCompanyNameLogo(mainContentDiv) {
 }
 
 function createRestaurantName(mainContentDiv) {
-    let restaurantName = document.createElement('h1');
-    let firsthalfName = document.createElement('span');
-    let secondhalfName = document.createElement('span');    
-
+    const restaurantName = document.createElement('h1');
     restaurantName.setAttribute('id','restaurant-name');
-    firsthalfName.classList.add('first-half-co-name');
-    secondhalfName.classList.add('second-half-co-name');
 
+    const firsthalfName = document.createElement('span');
+    firsthalfName.classList.add('first-half-co-name');
     firsthalfName.innerText = 'Omu';
+
+    const secondhalfName = document.createElement('span');    
+    secondhalfName.classList.add('second-half-co-name');
     secondhalfName.innerText = 'Life';
+    
     restaurantName.appendChild(firsthalfName);
     restaurantName.appendChild(secondhalfName);
     mainContentDiv.appendChild(restaurantName);
@@ -37,10 +39,10 @@ function createRestaurantName(mainContentDiv) {
 
 function createCompanyLogo(mainContentDiv) {
     let companyLogoDiv = document.createElement('div');
-    let companyLogoImg = document.createElement('img');
-    
     companyLogoDiv.setAttribute('id','company-logo');
-    companyLogoImg.src = "/src/images/omurice-clipart.png"
+
+    let companyLogoImg = document.createElement('img');
+    companyLogoImg.src = omuriceLogoImg;
     companyLogoImg.alt = "omurice clipart";
 
     companyLogoDiv.appendChild(companyLogoImg);
